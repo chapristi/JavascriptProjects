@@ -1,5 +1,5 @@
 const search = document.getElementById("search")
-
+const result  = document.getElementById("result")
 
 search.addEventListener("keyup", ({key}) => {
     let searchValue = search.value
@@ -16,9 +16,10 @@ search.addEventListener("keyup", ({key}) => {
 
 callApi = async (param) => {
   await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='+ param)
-  .then(function ({data}) {
-      if(data !==  null){
-        FormatData(data)
+  .then(function (response) {
+      if(response.data !==  null){
+    
+        FormatData(response.data.meals)
       }
   })
   .catch(function (error) {
@@ -32,7 +33,15 @@ callApi = async (param) => {
 
 
 FormatData = (data) => {
-  data.map((datas) => {
-      console.log(datas)
-  })
-}
+
+    result.innerHTML =   data.map((datas) => 
+
+      `
+      <h2>${datas.idMeal}</h2>
+
+      `
+  
+
+     
+    ).join("")
+  }
