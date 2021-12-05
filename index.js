@@ -35,13 +35,13 @@ callApi = async (param) => {
 FormatData = (data) => {
 
     result.innerHTML =   data.map((datas) => 
+      `
+      <h2>${datas.strMeal}</h2>
+      <p>${datas.strInstructions}</p>
+      <ul>
+        <li>${datas.strIngredient1}</li>
+      </ul>
 
       `
-      <h2>${datas.idMeal}</h2>
-
-      `
-  
-
-     
     ).join("")
   }
