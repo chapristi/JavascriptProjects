@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+
+.menue{
+    display: flex;
+    justify-content: center;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px;
+
+
+
+
+}
+.menue-hex {
+    text-decoration: none;
+    margin-left: 25px;
+}
+.menue-hex:hover{
+    color: aqua;
+}
+.menue-simple:hover{
+    color: aqua;
+}
+.menue-simple{
+    text-decoration: none;
+
+
+}
+.change{
+    display: flex;
+    justify-content: center;
+    border: black solid ;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: revert;
+
+}
