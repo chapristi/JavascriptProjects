@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+
+h1,h3{
+    font-family: 'Twinkle Star', cursive;
+    margin-left: 40%;
+    font-size: 50px;
+
+}
+h3{
+    margin-left: 45%;
+}
+
+.menue{
+    display: flex;
+    justify-content: center;
+    font-family: 'Twinkle Star', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 150px;
+
+}
+.reset{
+    margin-left: 25px;
+    margin-right: 25px;
+}
